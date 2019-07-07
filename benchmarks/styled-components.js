@@ -4,6 +4,8 @@ const Benchmark = require('benchmark')
 const xstyled = require('@xstyled/styled-components')
 const styled = require('styled-components')
 
+// Benchmark.options.maxTime = 0.2
+
 const suite = new Benchmark.Suite('styled')
 
 const primary = 'primary'

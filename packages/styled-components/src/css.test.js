@@ -32,4 +32,14 @@ describe('#css', () => {
     const { container } = render(<Dummy />)
     expect(container.firstChild).toHaveStyle('margin: 4px 8px;')
   })
+
+  it('supports important', () => {
+    const Dummy = styled.div`
+      ${css`
+        margin: 1 2 !important;
+      `}
+    `
+    const { container } = render(<Dummy />)
+    expect(container.firstChild).toHaveStyle('margin: 4px 8px;')
+  })
 })
