@@ -1,27 +1,36 @@
 ---
-title: xstyled - A new way to style components
+title: xstyled - Styled components with superpowers
 ---
 
 import { Link } from 'gatsby'
 import { Box } from '@xstyled/styled-components'
 import { HomeHero, ShowCase } from 'smooth-doc/components'
 import Helmet from 'react-helmet'
-import LiveButtons from '../components/LiveButtons'
+import { LiveEditor } from '../components/LiveEditor'
 
 <Helmet>
-  <title>xstyled - A new way to style components</title>
+  <title>xstyled - Styled components with superpowers</title>
 </Helmet>
 
 <HomeHero
   title={
     <>
-      <div>A new way to style components 💅</div>
-      <div style={{ fontSize: '0.8em' }}>Consistent theme based CSS</div>
+      <div>Styled components with superpowers 💅</div>
+      <div style={{ fontSize: '0.8em' }}>Build consistent UI faster</div>
     </>
   }
 />
 
-<LiveButtons />
+<Box maxWidth={1080} mx="auto" my={50} px={40}>
+  <Box maxWidth={540}>
+    <h2>Use theme with natural CSS syntax</h2>
+    <p>
+      With xstyled, CSS is naturally binded to your theme. No more <code>{`\${props => props.theme.property`}</code>{' '}
+      in your code. Your CSS remains clear and consistent.
+    </p>
+  </Box>
+  <LiveEditor />
+</Box>
 
 <Box maxWidth={860} mx="auto" my={50} px={40}>
   <Box row mx={-16}>

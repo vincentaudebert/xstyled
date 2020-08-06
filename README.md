@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/smooth-code/xstyled/master/resources/xstyled-logo.jpg" alt="xstyled" title="xstyled" width="300">
 </h1>
-<p align="center" style="font-size: 1.2rem;">A new way to style components</p>
+<p align="center" style="font-size: 1.2rem;">Styled components with superpowers</p>
 
 [![License](https://img.shields.io/npm/l/@xstyled/styled-components.svg)](https://github.com/smooth-code/xstyled/blob/master/LICENSE)
 [![npm package](https://img.shields.io/npm/v/@xstyled/styled-components/latest.svg)](https://www.npmjs.com/package/@xstyled/styled-components)
